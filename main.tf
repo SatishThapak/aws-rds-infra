@@ -81,7 +81,7 @@ resource "aws_db_instance" "db1" {
   db_subnet_group_name    = aws_db_subnet_group.mysql_grp.name
   backup_retention_period = var.backup_retention_days
 
-  skip_final_snapshot     = true
+  skip_final_snapshot = true
 
   tags = {
     Name = "mysql-db1"
